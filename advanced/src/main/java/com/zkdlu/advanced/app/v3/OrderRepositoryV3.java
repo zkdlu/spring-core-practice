@@ -1,6 +1,5 @@
 package com.zkdlu.advanced.app.v3;
 
-import com.zkdlu.advanced.trace.TraceId;
 import com.zkdlu.advanced.trace.TraceStatus;
 import com.zkdlu.advanced.trace.logtrace.LogTrace;
 import lombok.RequiredArgsConstructor;
@@ -12,7 +11,7 @@ public class OrderRepositoryV3 {
     private final LogTrace trace;
 
 
-    public void save(final TraceId traceId, final String itemId) {
+    public void save(final String itemId) {
         TraceStatus status = null;
         try {
             status = trace.begin("OrderRepository.save()");
