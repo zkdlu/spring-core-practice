@@ -46,4 +46,14 @@ public class ContextV1Test {
         ContextV1 context2 = new ContextV1(strategyLogic2);
         context2.execute();
     }
+
+    @Test
+    void strategyV2() {
+
+        ContextV1 context1 = new ContextV1(() -> log.info("logic1 실행"));
+        context1.execute();
+
+        ContextV1 context2 = new ContextV1(() -> log.info("logic1 실행"));
+        context2.execute();
+    }
 }
