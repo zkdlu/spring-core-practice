@@ -7,9 +7,7 @@ import com.zkdlu.proxy.app.v1.OrderRepositoryV1Impl;
 import com.zkdlu.proxy.app.v1.OrderServiceV1;
 import com.zkdlu.proxy.app.v1.OrderServiceV1Impl;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class AppV1Config {
 
     @Bean
