@@ -11,9 +11,7 @@ import com.zkdlu.proxy.config.v1_proxy.interface_proxy.OrderRepositoryInterfaceP
 import com.zkdlu.proxy.config.v1_proxy.interface_proxy.OrderServiceInterfaceProxy;
 import com.zkdlu.proxy.trace.logtrace.LogTrace;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class InterfaceProxyConfig {
 
     @Bean
