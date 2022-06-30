@@ -8,9 +8,7 @@ import com.zkdlu.proxy.config.v2_proxy.concrete_proxy.OrderRepositoryConcretePro
 import com.zkdlu.proxy.config.v2_proxy.concrete_proxy.OrderServiceConcreteProxy;
 import com.zkdlu.proxy.trace.logtrace.LogTrace;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class ConcreteProxyConfig {
     @Bean
     public OrderControllerV2 orderControllerV2(LogTrace trace) {
