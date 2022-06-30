@@ -9,11 +9,9 @@ import com.zkdlu.proxy.app.v1.OrderServiceV1Impl;
 import com.zkdlu.proxy.config.v2_dynamicproxy.handler.LogTraceFilterHandler;
 import com.zkdlu.proxy.trace.logtrace.LogTrace;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 
 import java.lang.reflect.Proxy;
 
-@Configuration
 public class DynamicProxyFilterConfig {
     private static final String[] PATTERNS = {"request*", "order*", "save*"};
 
